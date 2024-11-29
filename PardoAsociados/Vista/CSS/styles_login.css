@@ -1,0 +1,140 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Diseño de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Fondo gris claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para la columna izquierda */
+.left {
+    position: relative;
+    flex: 1;
+    background-color: #ffdb01; /* Fondo amarillo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.left img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: 100vh; /* La imagen ocupará todo el alto de la pantalla */
+    object-fit: cover; /* Recorta la imagen para llenar el espacio */
+    object-position: right; /* Centra la imagen */
+    z-index: 1;
+}
+
+.left h2 {
+    margin-top: 20px;
+    color: #333;
+    text-align: left;
+    justify-content: left;
+}
+
+/* Estilos para la columna derecha */
+.right {
+    flex: 1;
+    background-color: #fff; /* Fondo blanco */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.right h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.right p {
+    color: #8d8b8b;
+    font-size: 1.1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto con el checkbox */
+    gap: 8px; /* Espacio entre el checkbox y el texto */
+}
+
+input[type="checkbox"] {
+    margin: 0; /* Elimina cualquier margen por defecto del checkbox */
+}
+
+
+input[type="submit"] {
+    padding: 12px;
+    font-size: 1.1em;
+    color: #000000;
+    background-color: #ffdb01; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e6c501; /* Naranja más oscuro */
+}
+
+a {
+    color: #2578e4;
+    font-size: 1em;
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
